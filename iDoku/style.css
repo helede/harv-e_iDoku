@@ -55,6 +55,10 @@ h1 {
     text-align: center;
 }
 
+.h1-start:hover {
+    
+}
+
 .h2-start {
     color:white;
     text-align: center;
@@ -129,6 +133,25 @@ img {
 a {
     color: white;
     text-decoration: none;
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
+
+a:hover {
+    color: rgb(153,51,39)
 }
 
 .picdescription {
