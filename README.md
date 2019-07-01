@@ -2,7 +2,7 @@
 ### How to read the harv-e iDocumentation:
 
 1. Download this repository.
-2. Open "index.html" via Firefox or Google Chromium/Chrome.
+2. Open "index.html" via Firefox or Google Chromium/Chrome (full screen preferred).
 3. Follow the directions.
 
 ---
