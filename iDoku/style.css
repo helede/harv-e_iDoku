@@ -87,21 +87,29 @@ img {
     border-radius: 1%;
 }
 
+
 .footer {
     background-color: rgb(153,51,39);
     color:white;
     line-height: 150%;
     font-size: 30pt;
-    height: 10vh;
+    height: 60px;
     font-weight: lighter;
     text-align: end;
     padding-right: 2vw;
     padding-left: 2vw;
+    
 }
 
 .back {
     text-align: right;
     float: left;
+    line-height: 150%;
+    font-size: 30pt;
+    font-weight: lighter;
+    text-align: end;
+    padding-right: 2vw;
+    padding-left: 2vw;
 }
 
 .points {
@@ -110,6 +118,12 @@ img {
 .next {
     text-align: right;
     float: right;
+    line-height: 150%;
+    font-size: 30pt;
+    font-weight: lighter;
+    text-align: end;
+    padding-right: 2vw;
+    padding-left: 2vw;
 }
 
 a {
@@ -123,3 +137,42 @@ a {
 }
 
 .content-media {}
+
+.systemdiagramm {
+    padding: 5vh;
+}
+.system {
+    height: 30vh;
+    width: 100%;
+    border-radius:0;
+    margin:0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+.systembutton {
+    float: left;
+    width: 50%;
+}
+.component {
+    width: 30%;
+    opacity: 0.5;
+}
+.component:hover {
+    opacity: 1;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.884);
+    z-index: 2;
+    cursor: pointer;
+}
