@@ -56,6 +56,12 @@ img {
     border-radius: 1%;
 }
 
+video {
+    width: 100%;
+    border: 1px solid rgb(153,51,39);
+    border-radius: 1%;
+}
+
 /*CLASSES*/ 
 
 .a2 {
