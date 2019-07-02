@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>harv-e</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-block">
+        <h1>technik-prototyp</h1>
+        <div class="content-text">
+            <p> Der technische Prototyp zeigt das <b>Minimum Viable Product</b> und dessen Kern-Funktionen: <br>
+                die <b>Genauigkeit und Präzision</b> des Roboters im Erkennen der zu pflückende B-Erdbeeren.
+            </p>
+        </div>
+        <hr>
+        <h2>Entwicklung</h2>
+        <div class="content-text">
+            <p> Beim Bau des Prototyps wurden diverse Sensoren getestet. Dadurch hat sich ein Alkoholsensor für die
+                Erkennung nur für überreife, gehrende Früchte als ausreichend bewiesen. Aus der Norm fallende Erdbeeren
+                konnten dadurch allerdings nicht identifiziert werden. Außerdem kann durch die nahezu gleiche
+                Gasentwicklung der Erdbeere (Gährungsprozess), mittels dieses Sensors nicht unterschieden werden, ob es
+                sich um eine beschädigte, weiterverwendbare oder eine verschimmelte Erdbeere handelt.
+
+                Die Custom Vision-API von Microsoft Azure konnte durch den ObjectFinder nach wenigen Learnings schon
+                sehr gute Ergebnisse liefern. Doch sie bietet für eine Live-Demonstration der Erkennung leider nur
+                Bild-, und keine Videoerkennung.
+                Hier wäre die Möglichkeit gewesen, pro Frame ein Bild abzuspeichern, hochzuladen und von #C und node.js
+                das Bild analysieren zu lassen. Diese Analyse würde als JSON-Datei ausgegeben und könnte für die
+                Klassifizierung genutzt werden. Dieses Verfahren birgt jedoch einen hohen Datenverkehr mit Kapazitäten-
+                und Überlastungsgefahr. Zudem war uns eine lokale Lösung wichtig, um nicht von einer ans Internet
+                gebundenen API abhängig zu sein.
+
+            </p>
+        </div>
+        <hr>
+        <h2>Prototyp 1.0</h2>
+        <div class="content-text">
+            <p>Der oben gezeigte Prototyp besteht aus einem künstlich angelegten Erdbeerfeld-Modell. Die im
+                repräsentativen Greifarm verbaute Webcam liefert die Bilder an den Algorithmus, der Erdbeer-Attrappen
+                verschiedener Reifegrade voneinander differenzieren kann. Das aufgenommene Bild simuliert die Sicht des
+                Roboters, und wird im Browser für den Prototyp-Zuschauer dargestellt. So kann live getestet werden, wie
+                gut und schnell die Erdbeere in ihrem jeweiligen Reife-Stadium erkannt wird.
+                Jeder Robotor arbeitet unabhängig von anderen Einheiten und unterscheidet selbstständig zwischen
+                frischen, beschädigten oder verschimmelten Erbeeren. Im Prototyp wird dies durch zwei Leuchtdioden
+                symbolisiert, welche ein entsprechendes Feedback geben. Das Aufleuchten ist abhängig von der
+                Entscheidung des Roboters, ob er die Erdbeere pflücken darf oder nicht.
+
+                Dahinter steht ML5, eine auf JavaScript basierende Machine Learning Bibliothek, welche die Key Features
+                der Custom Vision API aufgreift und lokal zur Verfügung stellt. Trainiert wird dieses
+                Machine-Learning-Model mit jedem Bild, dass man über die Buttons auf der Browseroberfläche generiert.
+                Über eine Funktion werden die Bilder zu dem Button klassifiziert und mit abgeschlossenen Training als
+                Resultat bei „Label“ ausgegeben. Außerdem gibt er die Sicherheit seiner Analyse in „Confidence“ an. Da
+                das ganze Bild erfasst wird, können Position, Hintergrundwechsel oder Lichtverhältnis schon das einfache
+                Training beeinflussen.
+                Die Informationen der Kamera werden nach der ML5 Evaluation, via MQTT-Protokoll, kabellos an einen
+                ESP8266-12E gepublished, welcher zuvor den entsprechenden Topic „harv-e“ subscribed/abonniert hat.
+                Handelt es sich bei der empfangenen Information um eine frische Erdbeere, leuchtet die rote LED, bei
+                einer beschädigten oder verschimmelten die grüne. Für den Zuschauer könnte dieses Leuchtmuster im ersten
+                Moment verkehrt wirken, besitzt aber eine Logik. Denn es wird sich für diese farbliche Zuordnung
+                entschieden, da der Prototyp die Sicht des Roboters verdeutlicht. Eine frische Erbeere darf nicht
+                gepflückt werden (rot = halt!). Alle anderen jedoch schon (grün = los).
+            </p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="back"><a href="7_1_prototyp.html">
+                <</a> </div> <div class="next"><a href="8_finanzen.html">></a></div>
+    </div>
+</body>
+
+</html>
