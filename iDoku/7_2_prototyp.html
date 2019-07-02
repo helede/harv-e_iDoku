@@ -28,11 +28,13 @@
                 konnten dadurch allerdings nicht identifiziert werden. Außerdem kann durch die nahezu gleiche
                 Gasentwicklung der Erdbeere (Gährungsprozess), mittels dieses Sensors nicht unterschieden werden, ob es
                 sich um eine beschädigte, weiterverwendbare oder eine verschimmelte Erdbeere handelt.
+                </p>
                 <div class="content-media">
                     <img src="media/7/7_2/4.jpeg" alt="pic">
                     <p class="picdescription">Testing-Ausschnitt aus customvision.ai</p>
-                    <br>
+                    
                 </div>
+                <p>
                 Die Custom Vision-API von Microsoft Azure konnte durch den ObjectFinder nach wenigen Learnings schon
                 sehr gute Ergebnisse liefern. Doch sie bietet für eine Live-Demonstration der Erkennung leider nur
                 Bild-, und keine Videoerkennung.
@@ -57,11 +59,12 @@
                 verschiedener Reifegrade voneinander differenzieren kann. Das aufgenommene Bild simuliert die Sicht des
                 Roboters, und wird im Browser für den Prototyp-Zuschauer dargestellt. So kann live getestet werden, wie
                 gut und schnell die Erdbeere in ihrem jeweiligen Reife-Stadium erkannt wird.
+                </p>
                 <div class="content-media">
                     <img src="media/7/7_2/6.jpg" alt="pic">
                     <p class="picdescription">Webcam zur Erdbeer-Identifizierung</p>
                 </div>
-                <br>
+                <p>
                 Jeder Robotor arbeitet unabhängig von anderen Einheiten und unterscheidet selbstständig zwischen
                 frischen, beschädigten oder verschimmelten Erbeeren. Im Prototyp wird dies durch zwei Leuchtdioden
                 symbolisiert, welche ein entsprechendes Feedback geben. Das Aufleuchten ist abhängig von der
@@ -74,20 +77,21 @@
                 Resultat bei „Label“ ausgegeben. Außerdem gibt er die Sicherheit seiner Analyse in „Confidence“ an. Da
                 das ganze Bild erfasst wird, können Position, Hintergrundwechsel oder Lichtverhältnis schon das einfache
                 Training beeinflussen. <br>
-                <br>
+               
+                </p>
                 <div class="content-media">
                     <video controls>
                         <source src="media/7/7_2/3.mp4" type="video/mp4">
                     </video>
                     <p class="picdescription">Videoausschnitt Prototyp-Demonstration</p>
-                </div> <br>
+                </div> 
+                <p>
                 Die Informationen der Kamera werden nach der ML5 Evaluation, via MQTT-Protokoll, kabellos an einen
                 ESP8266-12E gepublished, welcher zuvor den entsprechenden Topic „harv-e“ subscribed/abonniert hat.
                 Handelt es sich bei der empfangenen Information um eine frische Erdbeere, leuchtet die rote LED, bei
                 einer beschädigten oder verschimmelten die grüne. Für den Zuschauer könnte dieses Leuchtmuster im ersten
                 Moment verkehrt wirken, besitzt aber eine Logik. Denn es wird sich für diese farbliche Zuordnung
                 entschieden, da der Prototyp die Sicht des Roboters verdeutlicht.
-                <br> <br>
                 <div class="content-media">
                     <img src="media/7/7_2/2.jpeg" alt="pic">
                     <p class="picdescription">Eine frische Erbeere darf nicht
