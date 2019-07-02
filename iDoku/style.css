@@ -1,135 +1,19 @@
+/*COLORS: 
+GREY: rgb(51, 51, 51)
+RED: rgb(153,51,39) */
+
+
+/*HTML-TAGS*/
+
 html { scroll-behavior: smooth; } 
 
 body {
     background-color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(51, 51, 51); /* grey*/
+    color: rgb(51, 51, 51);
     margin: 0;
     padding: 0;
 }
-
-.start {
-    width: 100%;
-    height: 70vh;
-    background-image: url("media/erdbeere.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 30vh;
-}
-
-.content-zitat {
-    width: 100%;
-    height: 90vh;
-    text-align: center;
-    font-weight: lighter;
-}
-
-.button-start {
-    background-color: rgb(153,51,39);
-    margin-left: 48vw;
-    position: center;
-    border-radius: 100%;
-    border:rgb(153,51,39);
-}
-
-.content-block {
-    margin: 20%;
-    margin-top: 8%;
-    margin-right: 30%;
-    margin-bottom: 10%
-}
-
-b {
-    color: rgb(153,51,39);
-}
-
-h1 {
-    font-size: 60pt;
-    color: rgb(153,51,39);
-}
-
-.h1-start {
-    margin:0; 
-    color:white;
-    text-align: center;
-}
-
-.h1-start:hover {
-    
-}
-
-.h2-start {
-    color:white;
-    text-align: center;
-    margin: 0;
-    font-weight: lighter;
-    line-height: 150%;
-    font-size: 25pt;
-}
-
-.zitat {
-    color:rgb(153,51,39);
-    padding-top: 30vh;
-    font-weight: lighter;
-    font-size: 25pt;
-}
-
-.content-text {
-    line-height: 150%;
-}
-
-hr {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: rgb(153,51,39);
-}
-
-img {
-    width: 100%;
-    border: 1px solid rgb(153,51,39);
-    border-radius: 1%;
-}
-
-
-.footer {
-    background-color: rgb(153,51,39);
-    color:white;
-    line-height: 150%;
-    font-size: 30pt;
-    height: 60px;
-    font-weight: lighter;
-    text-align: end;
-    padding-right: 2vw;
-    padding-left: 2vw;
-    
-}
-
-.back {
-    text-align: right;
-    float: left;
-    line-height: 150%;
-    font-size: 30pt;
-    font-weight: lighter;
-    text-align: end;
-    padding-right: 2vw;
-    padding-left: 2vw;
-}
-
-.points {
-    letter-spacing: 100pt;
-}
-.next {
-    text-align: right;
-    float: right;
-    line-height: 150%;
-    font-size: 30pt;
-    font-weight: lighter;
-    text-align: end;
-    padding-right: 2vw;
-    padding-left: 2vw;
-}
-
 
 a {
     color: white;
@@ -151,42 +35,110 @@ a {
     }
 }
 
+b {
+    color: rgb(153,51,39);
+}
+
+h1 {
+    font-size: 60pt;
+    color: rgb(153,51,39);
+}
+
+hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: rgb(153,51,39);
+}
+
+img {
+    width: 100%;
+    border: 1px solid rgb(153,51,39);
+    border-radius: 1%;
+}
+
+/*CLASSES*/ 
+
 .a2 {
     color: rgb(153,51,39);
 }
 
-.picdescription {
-    font-size: 8pt;
-    line-height: 50%;
-}
-
-.content-media {}
-
-.systemdiagramm {
-    padding: 5vh;
-}
-.system {
-    height: 30vh;
-    width: 100%;
-    border-radius:0;
-    margin:0;
-    padding: 0;
-    text-align: center;
-    
-}
-
-
-.systembutton {
+.back {
+    text-align: right;
     float: left;
-    width: 50%;
+    line-height: 150%;
+    font-size: 30pt;
+    font-weight: lighter;
+    text-align: end;
+    padding-right: 2vw;
+    padding-left: 2vw;
 }
+
 .component {
     width: 30%;
     opacity: 0.5;
 }
+
 .component:hover {
     opacity: 1;
 }
+
+.content-block {
+    margin: 20%;
+    margin-top: 8%;
+    margin-right: 30%;
+    margin-bottom: 10%
+}
+
+.content-text {
+    line-height: 150%;
+}
+
+.content-zitat {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.footer {
+    background-color: rgb(153,51,39);
+    color:white;
+    line-height: 150%;
+    font-size: 30pt;
+    height: 60px;
+    font-weight: lighter;
+    text-align: end;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    
+}
+
+.h1-start {
+    margin:0; 
+    color:white;
+    text-align: center;
+}
+
+.h2-start {
+    color:white;
+    text-align: center;
+    margin: 0;
+    font-weight: lighter;
+    line-height: 150%;
+    font-size: 25pt;
+}
+
+.next {
+    text-align: right;
+    float: right;
+    line-height: 150%;
+    font-size: 30pt;
+    font-weight: lighter;
+    text-align: end;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
 .overlay {
     display: none;
     position: fixed;
@@ -200,3 +152,60 @@ a {
     z-index: 2;
     cursor: pointer;
 }
+
+.picdescription {
+    font-size: 8pt;
+    line-height: 50%;
+}
+
+.start {
+    width: 100%;
+    height: 70vh;
+    background-image: url("media/erdbeere.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30vh;
+}
+.system {
+    height: 30vh;
+    width: 100%;
+    border-radius:0;
+    margin:0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.systembutton {
+    float: left;
+    width: 50%;
+}
+
+.systemdiagramm {
+    padding: 5vh;
+}
+
+.zitat {
+    color:rgb(153,51,39);
+    padding-top: 30vh;
+    font-weight: lighter;
+    font-size: 25pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
