@@ -8,13 +8,24 @@
     <title>harv-e</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="footer">
-            <div class="back"><a href="4_system.html"><</a></div> 
-            <!--Name der vorherigen Seite-->
-            <div class="next"><a href="6_team.html">></a></div>
-            <!--Name der nächsten Seite-->
+<script>
+ function playVid() {
+        document.getElementById("trailer").play();
+        console.log("play video");
+    }
+</script>
+<body style="background-color: black">
+    <div class="content-block">
+        <video id="trailer">
+            <source src="media/5/P4_Trailer_Plantastics.mp4" type="video/mp4">
+        </video>
     </div>
+    <div class="footer fixed">
+        <div class="back" style="width: 30%; text-align: left"><a href="4_system.html"><</a></div> 
+        <div style="width: 30%; float: left;  text-align: center"><a onclick="playVid()">play</a></div>
+        <div class="next" style="width: 30%"><a href="6_team.html">></a></div>
+    </div>
+
 </body>
 
 </html>

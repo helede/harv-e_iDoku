@@ -116,7 +116,18 @@ video {
     text-align: end;
     padding-right: 2vw;
     padding-left: 2vw;
-    
+    bottom: 0;
+    max-width: 100vw;
+}
+
+.fixed {
+    background-color: rgba(153, 50, 39, 0.445);
+    position: fixed;
+  bottom: 0;
+  left:0;
+  right:0;
+ 
+   
 }
 
 .h1-start {
@@ -190,6 +201,15 @@ video {
 
 .systemdiagramm {
     padding: 5vh;
+}
+
+#trailer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: auto; 
+  max-height: 100%;
+  border:none;
 }
 
 .zitat {
