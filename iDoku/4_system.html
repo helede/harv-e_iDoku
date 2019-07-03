@@ -33,13 +33,15 @@
                     die zur Lokalisierung der B-Erdbeeren auf dem Feld dienen. <br><br>
                     In der Regel nimmt eine Pflanze 80-90% des Sonnenlichts auf um daraus durch Photosynthese Energie zu
                     generieren. Dabei wird bis zu 2% der Energie als schwach fluoreszierendes Licht von der Pflanze
-                    abgegeben. Diese Lichtabstrahlung wird Chlorophyllfluoreszenz genannt. <br>
-                    Die hochauflösende Spektralkamera des Satelliten ermöglicht es, diese darzustellen. <br>
+                    abgegeben.
+                    Diese Lichtabstrahlung wird <b>Chlorophyllfluoreszenz</b> genannt.
+                    Die hochauflösende Spektralkamera des Satelliten ermöglicht es, diese darzustellen.
                     Feldstellen mit besonders niedrigems Chlorophyllwert tragen potentiell die meisten überreifen
                     Erdbeeren, da hier besonders viel Licht
                     emittiert wird. Zusammen mit den dazugehörigen GPS-Koordinaten können die Stellen im Feld erkannt
                     und lokalisiert werden, an denen sich ein Einsatz von harv-e am meisten lohnt. Daraus wird von einem
                     Algorithmus der optimaler Arbeitsweg für einen Ernteroboter errechnet.
+                    <br>
                     (Soudani, Francois, 2014), (Morton, et al. 2014)
                 </p>
             </div>
@@ -49,12 +51,13 @@
         <div class="content-block">
             <h1>server</h1>
             <div class="content-text">
-                <p> Der harv-e-Server sammelt alle Daten und verarbeitet diese <br>
-                    und übernimmt somit in diesem Schritt den Job der <b>Lokalisierung</b>. <br> <br>
-                    Zunächst greift er die Satellitenbilder des esa-Satelliten „Sentinel II.“ über dessen API ab. <br>
+                <p> Der harv-e-Server sammelt alle Daten und verarbeitet diese
+                    und übernimmt somit in diesem Schritt den Job der <b>Lokalisierung</b>.
+                    <br><br>
+                    Zunächst greift er die Satellitenbilder des esa-Satelliten „Sentinel II.“ über dessen API ab.
                     Ein separater Algorithmus ordnet den Stellen mit hohem Chlorophyllfluoreszenz die dazugehörigen
-                    GPS-Koordinaten zu. Aus den lokalisierten
-                    B-Erdbeeren-Stellen berechnet ein Algorithmus den effizientesten Arbeitsweg eines Roboters.
+                    GPS-Koordinaten zu. Aus den lokalisierten B-Erdbeeren-Stellen berechnet ein Algorithmus den
+                    effizientesten Arbeitsweg eines Roboters.
                     Daraufhin werden den Dockingstationen, die diese Koordinaten bearbeiten, diese Daten und das
                     Einsatz-Go gesendet.
                 </p>
@@ -82,22 +85,19 @@
             <h1>roboter</h1>
             <div class="content-text">
                 <p> Der Roboter übernimmt die restlichen Jobs, die das System insgesamt ausüben muss. <br><br>
-                    Nachdem er die Routen-Daten erhalten hat, startet er zum ersten Einsatzpunkt. <br> Die Steuerung
-                    erfolgt über einen
-                    Mikrocontroller mit GPS-Modul, der den Antrieb des Roboters zielgerichtet ansteuert. Vor Ort
+                    Nachdem er die Routen-Daten erhalten hat, startet er zum ersten Einsatzpunkt.Die Steuerung
+                    erfolgt über einen Mikrocontroller mit GPS-Modul, der den Antrieb des Roboters zielgerichtet ansteuert. Vor Ort
                     identifiziert er die B-Erdbeeren mit einer Kamera, die in seinem Greifarm integriert ist. Ein
                     Machine-Learning-Algorithmus, ein vortrainiertes neuronales Netzwerk, unterscheidet dabei, ob es
-                    sich bei der aufgenommenen Erdbeere um eine <br> B-Erdbeere handelt oder nicht
-                    <b>(Unterscheiden)</b>. Falls ja,
-                    wird diese mit dem Greifarm von der Pflanze abgetrennt <b>(Abschneiden)</b> und im integrierten
-                    Sammelcontainer abgelegt <b>(Einsammeln)</b>. Hierbei wird mithilfe von zwei Sammelcontainern
-                    zwischen
-                    faulen und weiterverarbeitbare B-Erdbeeren differenziert <b>(Sortieren, Zwischenlagern)</b>. <br>
+                    sich bei der aufgenommenen Erdbeere um eine B-Erdbeere handelt oder nicht
+                    <b>(Unterscheiden)</b>.
+                    Falls ja, wird diese mit dem Greifarm von der Pflanze abgetrennt <b>(Abschneiden)</b>
+                    und im integrierten Sammelcontainer abgelegt <b>(Einsammeln)</b>.
+                    Hierbei wird mithilfe von zwei Sammelcontainern zwischen faulen und weiterverarbeitbaren B-Erdbeeren differenziert <b>(Sortieren, Zwischenlagern)</b>.
                     Sobald der Roboter seine Route abgefahren hat, sein Container voll ist oder der Akku schwach wird,
-                    macht er
-                    sich auf den Weg zurück zur Dockingstation <b>(Transportieren)</b>. Dort werden die gesammelten
-                    B-Erdbeeren
-                    abgeladen und die Dockingstation sendet an den Server, wie hoch die gesammelte Menge ist.
+                    macht er sich auf den Weg zurück zur Dockingstation <b>(Transportieren)</b>.
+                    Dort werden die gesammelten B-Erdbeeren abgeladen und die Dockingstation sendet an den Server, wie
+                    hoch die gesammelte Menge ist.
                 </p>
             </div>
         </div>
@@ -107,7 +107,7 @@
             <h1>landwirt</h1>
             <div class="content-text">
                 <p> Der Landwirt wird über die Menge der <b>geernteten B-Erdbeeren informiert.</b> <br>
-                    Er wird über eine App auf seinem Smartphone auf dem Stand gehalten, <br>
+                    Er wird über eine App auf seinem Smartphone auf dem Stand gehalten,
                     die vom Server angesprochen wird.
                 </p>
             </div>
@@ -137,7 +137,7 @@
     </div>
 
     <div class="footer fixed" style="background-color: rgba(0, 0, 0, 0)">
-        <div class="back"><a href="3_harve.html"><</a></div> 
+        <div class="back"><a href="3_harve.html"><</a> </div> 
         <div class="next"><a href="5_trailer.html">></a></div>
     </div>
 </body>

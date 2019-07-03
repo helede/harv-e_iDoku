@@ -97,10 +97,10 @@ video {
 }
 
 .content-block {
-    margin: 20%;
+    margin-left: 20%;
     margin-top: 8%;
     margin-right: 30%;
-    margin-bottom: 10%
+    margin-bottom: 8%
 }
 
 .content-text {
@@ -132,11 +132,9 @@ video {
 .fixed {
     background-color: rgba(153, 50, 39, 0.445);
     position: fixed;
-  bottom: 0;
-  left:0;
-  right:0;
- 
-   
+    bottom: 0;
+    left:0;
+    right:0;
 }
 
 .h1-start {
@@ -216,7 +214,7 @@ video {
 #trailer {
   position: fixed;
   right: 0;
-  bottom: 0;
+  top: 0;
   max-width: auto; 
   max-height: 100%;
   border:none;
