@@ -37,17 +37,25 @@ a {
 
 b {
     color: rgb(153,51,39);
+    font-weight: normal;
 }
 
 h1 {
     font-size: 60pt;
     color: rgb(153,51,39);
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
 }
 
 hr {
     margin-top: 5%;
     margin-bottom: 5%;
-    color: rgb(153,51,39);
+    background-color: rgb(153,51,39);
+    height: 1px;
+    border: none;
 }
 
 img {
@@ -97,6 +105,7 @@ video {
 
 .content-text {
     line-height: 150%;
+    color:rgb(99, 99, 99);
 }
 
 .content-zitat {
@@ -171,8 +180,9 @@ video {
 }
 
 .picdescription {
-    font-size: 8pt;
+    font-size: 10pt;
     line-height: 50%;
+    color: rgb(153,51,39);
 }
 
 .start {
